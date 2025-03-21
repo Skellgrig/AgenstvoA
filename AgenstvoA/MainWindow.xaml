@@ -1,0 +1,34 @@
+﻿<Window x:Class="AgenstvoA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AgenstvoA"
+        mc:Ignorable="d"
+        Title="AgenstvoA" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Клиенты">
+                <MenuItem Header="Список клиентов" Click="ClientsList_Click"/>
+                <MenuItem Header="Добавить клиента" Click="AddClient_Click"/>
+            </MenuItem>
+            <MenuItem Header="Кредиты">
+                <MenuItem Header="Список кредитов" Click="LoansList_Click"/>
+                <MenuItem Header="Выдать кредит" Click="IssueLoan_Click"/>
+            </MenuItem>
+            <MenuItem Header="Платежи">
+                <MenuItem Header="Список платежей" Click="PaymentsList_Click"/>
+                <MenuItem Header="Внести платеж" Click="MakePayment_Click"/>
+            </MenuItem>
+            <MenuItem Header="Сотрудники">
+                <MenuItem Header="Список сотрудников" Click="EmployeesList_Click"/>
+                <MenuItem Header="Добавить сотрудника" Click="AddEmployee_Click"/>
+            </MenuItem>
+            <MenuItem Header="История кредитов">
+                <MenuItem Header="История кредитов" Click="LoansHistory_Click"/>
+            </MenuItem>
+        </Menu>
+        <Frame Margin="0,48,0,0" Name="MainContent" NavigationUIVisibility="Hidden">
+        </Frame>
+    </Grid>
+</Window>

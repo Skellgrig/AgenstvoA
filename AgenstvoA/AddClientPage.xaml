@@ -1,0 +1,90 @@
+﻿<Page x:Class="AgenstvoA.AddClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AgenstvoA"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="800"
+      Title="Добавить клиента">
+
+    <Grid Margin="20">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" >
+            <StackPanel>
+                <Border Padding="5">
+                    <TextBlock Text="Имя" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding FirstName}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Фамилия" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding LastName}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Отчество" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding MiddleName}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Дата рождения" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <DatePicker SelectedDate="{Binding DateOfBirth}" Style="{StaticResource MaterialDesignDatePicker}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Адрес" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding Address}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Номер телефона" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding PhoneNumber}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Email" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding Email}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Номер паспорта" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding PassportNumber}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Дата выдачи паспорта" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <DatePicker SelectedDate="{Binding PassportIssueDate}" Style="{StaticResource MaterialDesignDatePicker}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Кем выдан паспорт" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding PassportIssuer}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Доход" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding Income}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Border Padding="5">
+                    <TextBlock Text="Кредитный рейтинг" Style="{StaticResource MaterialDesignTextBlock}"/>
+                </Border>
+                <Border BorderBrush="MediumPurple" BorderThickness="1" Padding="5">
+                    <TextBox Text="{Binding CreditScore}" Style="{StaticResource MaterialDesignTextBox}"/>
+                </Border>
+                <Button Content="Сохранить" Click="SaveButton_Click" Style="{StaticResource MaterialDesignRaisedButton}"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
